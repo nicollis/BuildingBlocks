@@ -18,5 +18,16 @@ class TestBuildingBlocks < Test::Unit::TestCase
         assert_equal({"down"=>1, "how"=>2, "howdy"=>1,"go"=>1, "going"=>1, "it"=>2, "i"=> 3, "own"=>1,"part"=>1,"partner"=>1,"sit"=>1},
             substrings("Howdy partner, sit down! How's it going?", dictionary))
     end
+    
+    def test_bubble_sort
+        assert_equal([0,2,2,3,4,78], bubble_sort([4,3,78,2,0,2]))
+        
+        assert_equal(
+            ["hi", "hey", "hello"],
+            bubble_sort_by(["hi","hello","hey"]) do |left,right|
+               left.length - right.length
+            end
+        )
+    end
 
 end
