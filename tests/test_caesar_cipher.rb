@@ -1,10 +1,10 @@
-require "./lib/NAME.rb"
+require "./lib/BuildingBlocks.rb"
 require "test/unit"
 
-class TestName < Test::Unit::TestCase
+class TestCaesarCipher < Test::Unit::TestCase
 
-    def test_sample
-        assert_equal(4, 2+2)
+    def test_cipher
+        assert_equal("Bmfy f xywnsl!", caesar_cipher("What a string!", 5))
     end
 
 end
