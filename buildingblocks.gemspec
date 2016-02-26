@@ -14,6 +14,6 @@ Gem::Specification.new do |spec|
     
     spec.files = ['lib/buildingblocks.rb']
     spec.executables = ['bin/buildingblocks']
-    spec.test_files = ['tests/test_caesar_cipher.rb']
+    spec.test_files = ['tests/test_blocks.rb']
     spec.require_paths = ["lib"]
 end
